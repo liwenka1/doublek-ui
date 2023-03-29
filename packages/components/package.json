@@ -2,7 +2,7 @@
   "name": "doublek-ui",
   "version": "1.0.0",
   "main": "lib/index.js",
-  "module":"es/index.js",
+  "module": "es/index.js",
   "scripts": {
     "build": "vite build"
   },
@@ -17,5 +17,8 @@
   "author": "liwenkai",
   "license": "MIT",
   "description": "",
-  "typings": "lib/index.d.ts"
+  "typings": "lib/index.d.ts",
+  "dependencies": {
+    "@doublek-ui/utils": "workspace:^1.0.0"
+  }
 }
