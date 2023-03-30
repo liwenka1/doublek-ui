@@ -1,8 +1,16 @@
 <template>
-  <k-button class="button">click me! </k-button>
+  <k-button ref="button" class="button">click me! </k-button>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { onMounted, ref } from 'vue';
+
+
+const button = ref<AtypicalDButton>()
+onMounted(() => {
+  button.value?.setProperty && button.value?.setProperty("--bg", "var(--yellow)")
+})
+</script>
 
 <style scoped>
 .button {
