@@ -17,18 +17,18 @@ import { delay } from "lodash-es";
 import { onMounted, ref } from "vue";
 import "./Button.css";
 
-const buttonRef = ref<HTMLButtonElement>()
+const buttonRef = ref<HTMLButtonElement>();
 const setProperty = (key: string, value: any) => {
-  buttonRef.value?.style.setProperty(key, value)
-}
+  buttonRef.value?.style.setProperty(key, value);
+};
 onMounted(() => {
   delay(() => {
-    setProperty("--bg", "blue")
-  }, 3000)
-})
+    setProperty("--bg", "blue");
+  }, 3000);
+});
 
 defineExpose<AtypicalDButton>({
-  setProperty
+  setProperty: setProperty,
 });
 </script>
 
@@ -43,4 +43,3 @@ defineExpose<AtypicalDButton>({
   --left: rem(80px);
 }
 </style>
-
