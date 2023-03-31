@@ -5,7 +5,6 @@
 <script lang="ts" setup>
 import { onMounted, ref } from 'vue';
 
-
 const button = ref()
 onMounted(() => {
   // button.value?.setProperty && button.value?.setProperty("--bg", "var(--yellow)")

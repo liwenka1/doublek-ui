@@ -1,13 +1,13 @@
 export const data = {
-  "key": "v-8daa1a0e",
-  "path": "/",
+  "key": "v-c0c95384",
+  "path": "/zh-CN/",
   "title": "",
   "lang": "en-US",
   "frontmatter": {
     "home": true,
     "heroImage": "/images/logo.png",
-    "heroText": "DoubleK UI",
-    "tagline": "DoubleK UI，一套为开发者、设计师和产品经理准备的基于 Vue 3 的桌面端组件库",
+    "heroText": "Atypical UI",
+    "tagline": "希望你可以在这找到一些非专业的组件和效果 :-3",
     "actions": [
       {
         "text": "开始 →",
@@ -29,21 +29,15 @@ export const data = {
         "details": "Some animation and visual solutions are also provided."
       }
     ],
-    "footer": "MIT Licensed | Copyright © 2023-present liwenkai."
+    "footer": "MIT Licensed | Copyright © 2022-present Don."
   },
   "excerpt": "",
   "headers": [],
   "git": {
-    "updatedTime": 1680229376000,
-    "contributors": [
-      {
-        "name": "liwenkai",
-        "email": "2020583117@qq.com",
-        "commits": 2
-      }
-    ]
+    "updatedTime": null,
+    "contributors": []
   },
-  "filePathRelative": "index.md"
+  "filePathRelative": "zh-CN/index.md"
 }
 
 if (import.meta.webpackHot) {

@@ -1,10 +1,10 @@
 import { describe, it, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
-import { Button } from '..'
+import { DoubleKButton } from '..'
 
 describe('Button:Test', () => {
     it('should render slot', () => {
-        const renderButton = mount(Button, {
+        const renderButton = mount(DoubleKButton, {
             slots: {
                 default: 'Hello World',
                 tag: 'tag'

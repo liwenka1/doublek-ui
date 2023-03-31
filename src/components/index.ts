@@ -1,5 +1,5 @@
 /** generate all export here */
-export { default as Button } from "@/components/button/Button.vue";
+export { default as DoubleKButton } from "@/components/DoubleKButton/DoubleKButton.vue"
 
 /** generate Component style here */
-import "@/components/button/Button.css";
+import "@/components/DoubleKButton/DoubleKButton.css";

@@ -1,10 +1,11 @@
 <template>
-  <k-button ref="button" class="button">click me! </k-button>
+  <DoubleKButton ref="button" class="button">click me! </DoubleKButton>
 </template>
 
 <script lang="ts" setup>
+import '@/style/index.css'
 import { onMounted, ref } from 'vue';
-
+import { DoubleKButton } from '@/components/DoubleKButton';
 
 const button = ref<AtypicalDButton>()
 onMounted(() => {
@@ -12,6 +13,4 @@ onMounted(() => {
 })
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

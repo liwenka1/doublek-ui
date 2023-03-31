@@ -15,7 +15,7 @@ export default { name: "k-button" };
 <script setup lang="ts">
 import { delay } from "lodash-es";
 import { onMounted, ref } from "vue";
-import "./Button.css";
+import "./DoubleKButton.css";
 
 const buttonRef = ref<HTMLButtonElement>();
 const setProperty = (key: string, value: any) => {
