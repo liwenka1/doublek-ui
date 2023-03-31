@@ -1,18 +1,17 @@
-import '@/style/index.css'
+import "@/style/index.css";
 
-import { forEach } from 'lodash-es'
-import type { App } from 'vue'
-import * as components from '@/components/index'
-import { DoubleKButton } from '@/components/DoubleKButton'
+import { forEach } from "lodash-es";
+import type { App } from "vue";
+import * as components from "@/components/index";
 
 export const creatUI = () => {
-    return {
-        install: (app: App) => {
-            forEach(components, components => {
-                app.component(components.name, components)
-            })
-        }
-    }
-}
+  return {
+    install: (app: App) => {
+      forEach(components, (components) => {
+        app.component(components.name, components);
+      });
+    },
+  };
+};
 
-export { components, DoubleKButton }
+export { default as DoubleKButton } from "@/components/DoubleKButton/DoubleKButton.vue";

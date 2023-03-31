@@ -29,8 +29,9 @@
 <br />
 <p>在你的入口文件添加以下代码：</p>
 <br />
-<div class="language-javascript ext-js line-numbers-mode"><pre v-pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token string">"doublek-ui/dist/style.css"</span><span class="token punctuation">;</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><br />
+<div class="language-javascript ext-js line-numbers-mode"><pre v-pre class="language-javascript"><code><span class="token comment">// main.js中</span>
+<span class="token keyword">import</span> <span class="token string">"doublek-ui/dist/style.css"</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><br />
 <div class="custom-container tip"><p class="custom-container-title">TIP</p>
 <br/>
 组件库多数组件及效果相互独立，且适用场景不同。如果使用组件不多，推荐只引入 CSS 文件，并在具体场景中自定义组件属性。
@@ -40,18 +41,27 @@
 <h3 id="全局引入" tabindex="-1"><a class="header-anchor" href="#全局引入" aria-hidden="true">#</a> 全局引入</h3>
 <br />
 <p>与多数组件库类似，Atypical UI 也提供了全局引入方式。你需要在入口文件中引入 <code v-pre>doublek-ui</code>，并进行全局注册。</p>
-<div class="language-javascript ext-js line-numbers-mode"><pre v-pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> createApp <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"vue"</span><span class="token punctuation">;</span>
+<div class="language-javascript ext-js line-numbers-mode"><pre v-pre class="language-javascript"><code><span class="token comment">// main.js中</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> createApp <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"vue"</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> App <span class="token keyword">from</span> <span class="token string">"./App.vue"</span><span class="token punctuation">;</span>
 
 <span class="token keyword">import</span> <span class="token punctuation">{</span> creatUI <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"doublek-ui"</span><span class="token punctuation">;</span>
 <span class="token keyword">import</span> <span class="token string">"doublek-ui/dist/style.css"</span><span class="token punctuation">;</span>
 
 <span class="token function">createApp</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">creatUI</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">mount</span><span class="token punctuation">(</span><span class="token string">"#app"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="局部引入" tabindex="-1"><a class="header-anchor" href="#局部引入" aria-hidden="true">#</a> 局部引入</h3>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="局部引入" tabindex="-1"><a class="header-anchor" href="#局部引入" aria-hidden="true">#</a> 局部引入</h3>
 <br />
 <p>如果你不希望在全局导入组件库，可以通过局部引入方式来实现相同的效果。</p>
-<div class="language-vue ext-vue line-numbers-mode"><pre v-pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">setup</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ts<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
-<span class="token keyword">import</span> <span class="token punctuation">{</span> CyberButton <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"doublek-ui"</span><span class="token punctuation">;</span>
+<div class="language-javascript ext-js line-numbers-mode"><pre v-pre class="language-javascript"><code><span class="token comment">// main.js中</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> createApp <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"vue"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> App <span class="token keyword">from</span> <span class="token string">"./App.vue"</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token string">"doublek-ui/dist/style.css"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> DoubleKButton <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"doublek-ui"</span><span class="token punctuation">;</span>
+
+<span class="token function">createApp</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span><span class="token string">"k-button"</span><span class="token punctuation">,</span> DoubleKButton<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">mount</span><span class="token punctuation">(</span><span class="token string">"#app"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-vue ext-vue line-numbers-mode"><pre v-pre class="language-vue"><code><span class="token comment">&lt;!-- vue中 --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">setup</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ts<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span>

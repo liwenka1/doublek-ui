@@ -5,7 +5,7 @@
 <script lang="ts" setup>
 import '@/style/index.css'
 import { onMounted, ref } from 'vue';
-import { DoubleKButton } from '@/components/DoubleKButton';
+import { DoubleKButton } from '@/components/index';
 
 const button = ref<AtypicalDButton>()
 onMounted(() => {

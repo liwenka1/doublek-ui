@@ -69,6 +69,7 @@ yarn add doublek-ui
 <br />
 
 ```js
+// main.js中
 import "doublek-ui/dist/style.css";
 ```
 
@@ -90,6 +91,7 @@ import "doublek-ui/dist/style.css";
 与多数组件库类似，Atypical UI 也提供了全局引入方式。你需要在入口文件中引入 `doublek-ui`，并进行全局注册。
 
 ```js
+// main.js中
 import { createApp } from "vue";
 import App from "./App.vue";
 
@@ -105,9 +107,20 @@ createApp(App).use(creatUI()).mount("#app");
 
 如果你不希望在全局导入组件库，可以通过局部引入方式来实现相同的效果。
 
+```js
+// main.js中
+import { createApp } from "vue";
+import App from "./App.vue";
+
+import "doublek-ui/dist/style.css";
+import { DoubleKButton } from "doublek-ui";
+
+createApp(App).component("k-button", DoubleKButton).mount("#app");
+```
+
 ```vue
+<!-- vue中 -->
 <script setup lang="ts">
-import { CyberButton } from "doublek-ui";
 </script>
 
 <template>

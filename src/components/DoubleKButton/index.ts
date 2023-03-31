@@ -1,1 +1,0 @@
-export { default as DoubleKButton } from "./DoubleKButton.vue";
