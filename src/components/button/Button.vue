@@ -21,25 +21,12 @@ const buttonRef = ref<HTMLButtonElement>();
 const setProperty = (key: string, value: any) => {
   buttonRef.value?.style.setProperty(key, value);
 };
-onMounted(() => {
-  delay(() => {
-    setProperty("--bg", "blue");
-  }, 3000);
-});
 
-defineExpose<AtypicalDButton>({
+defineExpose({
   setProperty: setProperty,
 });
 </script>
 
 <style scoped>
-.d-button {
-  --color: var(--white);
-  --border-color: var(--blue);
-  --bg: var(--red);
-  --glitch-text: "";
-  --glitch-color: var(--white);
-  --top: rem(16px);
-  --left: rem(80px);
-}
+
 </style>

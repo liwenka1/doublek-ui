@@ -278,10 +278,10 @@ de-indent@^1.0.2:
   resolved "http://localhost:4873/de-indent/-/de-indent-1.0.2.tgz#b2038e846dc33baa5796128d0804b455b8c1e21d"
   integrity sha512-e/1zu3xH5MQryN2zdVaF0OrdNLUbvWxzMbi+iNA6Bky7l1RoP8a2fIbRocyHclXt/arDrrR6lL3TqFD9pMQTsg==
 
-doublek-ui@^0.0.1:
-  version "0.0.1"
-  resolved "http://localhost:4873/doublek-ui/-/doublek-ui-0.0.1.tgz#adde9b62dd29262b1207d83f70b1a5b45c5d6a7e"
-  integrity sha512-xdzau3d5kgXv28iuSSAx0Y1Zl20n/cYiRUoN7X0kqA3FJBFbHhOx71Bhtp18un90XDu1+TgVuxKR61x2asJ5gQ==
+doublek-ui@^0.0.4:
+  version "0.0.4"
+  resolved "http://localhost:4873/doublek-ui/-/doublek-ui-0.0.4.tgz#e50b5ad4d5dfd6162db0f8695532bb9731ea5408"
+  integrity sha512-rciYDxZURaQHiH05RzuOaZfgAg9Vy4qmNWASO5RWXnIdM+h9sK/vdiujKiU0tiNnNNziMaOc2G407zGwgTwTCw==
   dependencies:
     vue "^3.2.47"
 

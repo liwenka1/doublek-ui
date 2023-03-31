@@ -19,7 +19,6 @@ declare type DButtonProperty =
     | '--glitchText'
     | '--top'
     | '--left'
-    | 'animationTime'
 
 declare interface AtypicalDButton {
     setProperty: ((key: DButtonProperty, value: string | null | number) => void) | undefined

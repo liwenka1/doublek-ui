@@ -8,12 +8,10 @@ import { onMounted, ref } from 'vue';
 
 const button = ref<AtypicalDButton>()
 onMounted(() => {
-  button.value?.setProperty && button.value?.setProperty("--bg", "var(--yellow)")
+  // button.value?.setProperty && button.value?.setProperty("--bg", "var(--yellow)")
 })
 </script>
 
 <style scoped>
-.button {
-  --glitch-text: "123";
-}
+
 </style>

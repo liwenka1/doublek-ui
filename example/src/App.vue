@@ -1,19 +1,19 @@
-<script setup lang="ts">
-import { ref, onMounted } from "vue";
-
-const button = ref();
-
-onMounted(() => {
-  // button.value?.setProperty("--bg", "black");
-});
-</script>
-
 <template>
-  <k-button ref="button" class="test-button">123</k-button>
+  <k-button ref="button" class="button">click me! </k-button>
 </template>
 
+<script lang="ts" setup>
+import { onMounted, ref } from 'vue';
+
+
+const button = ref()
+onMounted(() => {
+  // button.value?.setProperty && button.value?.setProperty("--bg", "var(--yellow)")
+})
+</script>
+
 <style scoped>
-.test-button {
+.button {
   --bg: yellow;
 }
 </style>
