@@ -9,9 +9,7 @@
     "type": "node ./src/scripts/buildType.cjs",
     "test": "vitest",
     "clean": "rm -rf dist",
-    "coverage": "vitest run --coverage",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "vue": "^3.2.47"
@@ -22,7 +20,6 @@
     "@vitejs/plugin-vue": "^4.1.0",
     "@vitest/coverage-c8": "^0.29.8",
     "@vue/test-utils": "^2.3.2",
-    "@vuepress/client": "^2.0.0-beta.45",
     "fast-glob": "^3.2.12",
     "happy-dom": "^8.9.0",
     "lodash-es": "^4.17.21",
