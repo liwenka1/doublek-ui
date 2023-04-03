@@ -7,5 +7,6 @@ export const head: HeadConfig[] = [
   ['link', { rel: 'apple-touch-icon', href: '/favicon.ico' }],
   ['link', { rel: 'mask-icon', href: '/favicon.ico', color: '#3eaf7c' }],
   ['meta', { name: 'msapplication-TileImage', content: '/favicon.ico' }],
-  ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
+  ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
+  ['link', { rel: 'icon', href: '/favicon.ico' }]
 ]
