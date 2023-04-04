@@ -13,7 +13,7 @@ features:
   - icon: 🎏
     title: 指南
     details: 了解设计指南，高效开发产品
-    link : /guild/
+    link : /guild/foundation/DoubleK-UI
     linkText : 设计指南
   - icon: 📗 
     title: 组件
