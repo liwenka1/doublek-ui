@@ -3,16 +3,17 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted, ref } from 'vue';
+import { onMounted, ref } from "vue";
+// import { KButton } from "doublek-ui";
 
-const button = ref()
+const button = ref();
 onMounted(() => {
   // button.value?.setProperty && button.value?.setProperty("--bg", "var(--yellow)")
-})
+});
 </script>
 
 <style scoped>
-.button {
-  --bg: yellow;
-}
+/* .button {
+  --bg: blue;
+} */
 </style>

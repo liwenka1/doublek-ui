@@ -13,12 +13,12 @@ features:
   - icon: 🎏
     title: 指南
     details: 了解设计指南，高效开发产品
-    link : /guild/foundation/DoubleK-UI
+    link : /guild/foundation/introduction
     linkText : 设计指南
   - icon: 📗 
     title: 组件
     details: 使用组件相关Demo快速体验
-    link : /components/
+    link : /components/basic/button
     linkText : 组件 Demo
   - icon: 🎮
     title: 资源

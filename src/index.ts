@@ -14,4 +14,4 @@ export const creatUI = () => {
   };
 };
 
-export { default as DoubleKButton } from "@/components/DoubleKButton/DoubleKButton.vue";
+export { default as KButton } from "@/components/DoubleKButton/DoubleKButton.vue";
