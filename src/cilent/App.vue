@@ -6,7 +6,7 @@
 <script lang="ts" setup>
 import "@/style/index.css";
 import { onMounted, ref } from "vue";
-import { KButton, KForm } from "@/index";
+// import { KButton, KForm } from "@/index";
 
 const button = ref<AtypicalDButton>();
 onMounted(() => {

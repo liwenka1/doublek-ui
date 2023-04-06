@@ -1,5 +1,3 @@
-import "@/style/index.css";
-
 import { forEach } from "lodash-es";
 import type { App } from "vue";
 import * as components from "@/index";

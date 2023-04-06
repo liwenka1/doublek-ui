@@ -3,7 +3,12 @@ export default { name: "k-form" };
 </script>
 
 <template>
-  <form>123</form>
+  <dl>
+    <dt>名词1</dt>
+    <dd>名词1解释1</dd>
+    <dd>名词1解释2</dd>
+    <dd>名词1解释3</dd>
+  </dl>
 </template>
 
 <script setup lang="ts">
