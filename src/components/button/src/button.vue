@@ -13,9 +13,8 @@ export default { name: "k-button" };
 </template>
 
 <script setup lang="ts">
-import { delay } from "lodash-es";
-import { onMounted, ref } from "vue";
-import "./DoubleKButton.css";
+import { ref } from "vue";
+import "../styles/button.css";
 
 const buttonRef = ref<HTMLButtonElement>();
 const setProperty = (key: string, value: any) => {
@@ -27,6 +26,4 @@ defineExpose({
 });
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

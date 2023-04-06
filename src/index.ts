@@ -1,17 +1,3 @@
-import "@/style/index.css";
-
-import { forEach } from "lodash-es";
-import type { App } from "vue";
-import * as components from "@/components/index";
-
-export const creatUI = () => {
-  return {
-    install: (app: App) => {
-      forEach(components, (components) => {
-        app.component(components.name, components);
-      });
-    },
-  };
-};
-
-export { default as KButton } from "@/components/DoubleKButton/DoubleKButton.vue";
+export { creatUI } from "@/creatUi";
+export { default as KButton } from "@/components/button/src/button.vue";
+export { default as KForm } from "@/components/form/src/form.vue";
