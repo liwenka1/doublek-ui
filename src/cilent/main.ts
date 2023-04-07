@@ -1,5 +1,6 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import { creatUI } from "..";
+// import { creatUI } from "..";
+// .use(creatUI())
 
-createApp(App).use(creatUI()).mount("#app");
+createApp(App).mount("#app");

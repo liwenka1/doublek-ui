@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "doublek-ui": "^0.0.12",
+    "doublek-ui": "^0.0.14",
     "vue": "^3.2.47"
   },
   "devDependencies": {

@@ -3,27 +3,40 @@ export default { name: "k-button" };
 </script>
 
 <template>
-  <button ref="buttonRef" class="d-button">
+  <button
+    class="k-button"
+    :class="classList"
+    :type="nativeType"
+    :autofocus="autoFocus"
+    :disabled="disabled || loading"
+    :size="size"
+  >
+    <i v-if="props.loading" class="tas-icon-loading"></i>
+    <i v-if="props.icon && !props.loading" :class="props.icon"></i>
     <slot />
-    <span class="d-button_glitch" />
-    <span v-if="!!$slots['tag']" class="d-button_tag">
-      <slot name="tag"></slot>
-    </span>
   </button>
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
-import "../styles/button.css";
-
-const buttonRef = ref<HTMLButtonElement>();
-const setProperty = (key: string, value: any) => {
-  buttonRef.value?.style.setProperty(key, value);
-};
-
-defineExpose({
-  setProperty: setProperty,
+import "../styles/index";
+import { computed } from "vue";
+import { Props } from "./button";
+const props = defineProps(Props);
+const classList = computed(() => {
+  const { type, size, round, plain, circle, disabled, loading } = props;
+  return [
+    {
+      [`tas-button--${type}`]: type,
+      [`tas-button--${size}`]: size,
+      ["is-disabled"]: disabled,
+      ["is-loading"]: loading,
+      ["is-round"]: round,
+      ["is-plain"]: plain,
+      ["is-circle"]: circle,
+    },
+  ];
 });
+console.log(classList);
 </script>
 
 <style scoped></style>

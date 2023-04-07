@@ -4,7 +4,7 @@
 
 <script lang="ts" setup>
 import { onMounted, ref } from "vue";
-// import { KButton } from "doublek-ui";
+import { KButton } from "doublek-ui";
 
 const button = ref();
 onMounted(() => {
