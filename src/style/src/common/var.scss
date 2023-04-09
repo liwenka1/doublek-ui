@@ -1,0 +1,20 @@
+// 公共的变量
+// Color
+$color-white: #ffffff !default;
+$color-black: #000000 !default;
+$color-primary: #409eff !default;
+$color-success: #67c23a !default;
+$color-warning: #e6a23c !default;
+$color-danger: #f56c6c !default;
+$color-error: #f56c6c !default;
+$color-info: #909399 !default;
+
+// Button
+$button-primary-border-color: $color-primary !default;
+$button-primary-font-color: $color-white !default;
+$button-primary-background-color: $color-primary !default;
+
+$button-hover-tint-percent: 20% !default;
+$button-active-shade-percent: 10% !default;
+
+

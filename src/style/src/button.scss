@@ -1,7 +1,15 @@
-.tas-button--primary {
-  background-color: var(--blue);
-}
-.tas-button--medium {
-  height: 50px;
-  width: 100px;
+@use "./mixins/mixins.scss" as *;
+@use "./mixins/utils.scss" as *;
+@use "./common/var.scss" as *;
+@use "./mixins/button" as *;
+
+@include b(button) {
+  /* type */
+  @include m(primary) {
+    @include button-variant(
+      $button-primary-font-color,
+      $button-primary-background-color,
+      $button-primary-border-color
+    );
+  }
 }

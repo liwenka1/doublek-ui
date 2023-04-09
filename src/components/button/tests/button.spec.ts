@@ -4,12 +4,19 @@ import Button from "../src/button.vue";
 
 describe("Button:Test", () => {
   it("should render slot", () => {
-    const renderButton = mount(Button, {
+    const wrapper = mount(Button, {
       slots: {
         default: "Hello World",
-        tag: "tag",
       },
     });
-    expect(renderButton.text()).toBe("Hello Worldtag");
+    expect(wrapper.text()).toContain("Hello World");
+  });
+  it('should have class', () => {
+    const wrapper = mount(Button, {
+      props: {
+        type: 'primary'
+      }
+    });
+    expect(wrapper.classes()).toContain('tas-button--primary');
   });
 });

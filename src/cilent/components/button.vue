@@ -1,8 +1,6 @@
 <template>
   <k-button
     type="primary"
-    disabled
-    size="medium"
     >click me!
   </k-button>
 </template>

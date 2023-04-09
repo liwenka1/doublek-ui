@@ -14,9 +14,7 @@ export const Props = {
   size: {
     type: String as PropType<ButtonSizeType>,
     validator(value: ButtonSizeType) {
-      return (["default", "medium", "small", "mini", "tiny"] as const).includes(
-        value
-      );
+      return (["large", "default", "small", "mini"] as const).includes(value);
     },
   },
   plain: {
@@ -54,6 +52,10 @@ export const Props = {
       return (["button", "submit", "reset"] as const).includes(value);
     },
   },
+};
+
+export const Emits = {
+  click: (evt: MouseEvent): MouseEvent => evt,
 };
 
 export type ButtonProps = ExtractPropTypes<typeof Props>;
