@@ -4,6 +4,15 @@
 @use "./mixins/button" as *;
 
 @include b(button) {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+
+  line-height: 1;
+  cursor: pointer;
+  box-sizing: border-box;
+  outline: none;
+  color: $color-black;
   /* type */
   @include m(primary) {
     @include button-variant(

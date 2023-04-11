@@ -17,6 +17,6 @@ describe("Button:Test", () => {
         type: 'primary'
       }
     });
-    expect(wrapper.classes()).toContain('tas-button--primary');
+    expect(wrapper.classes()).toContain('k-button--primary');
   });
 });
