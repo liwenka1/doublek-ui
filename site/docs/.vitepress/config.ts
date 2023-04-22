@@ -22,7 +22,7 @@ export default defineConfig({
   themeConfig: {
     i18nRouting: false,
 
-    logo: "/logo.jpg",
+    logo: "/logo.png",
 
     nav,
     sidebar,
@@ -34,7 +34,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/liwenka1/doublek-ui" },
+      { icon: "github", link: "https://github.com/liwenka1" },
     ],
 
     footer: {

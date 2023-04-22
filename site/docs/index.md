@@ -7,7 +7,7 @@ hero:
   text: 基于 Vue 3
   tagline: 一个有点趣味的组件库
   image:
-    src: /logo.jpg
+    src: /logo.png
     alt: 首页
 features:
   - icon: 🎏
@@ -23,7 +23,7 @@ features:
   - icon: 🎮
     title: 资源
     details: 组件源代码以及文档源代码下载
-    link : /project/
+    link : https://github.com/liwenka1/doublek-ui
     linkText : 资源下载
   - icon: 🍜 
     title: 吃饭
