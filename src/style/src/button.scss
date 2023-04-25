@@ -28,7 +28,12 @@
     margin-left: 10px;
   }
 
-  @include button-size($button-padding-vertical, $button-padding-horizontal, $button-font-size, $button-border-radius);
+  @include button-size(
+    $button-padding-vertical,
+    $button-padding-horizontal,
+    $button-font-size,
+    $button-border-radius
+  );
 
   &:hover,
   &:focus {
@@ -39,7 +44,11 @@
 
   &:active {
     color: mix($color-black, $color-primary, $button-active-shade-percent);
-    border-color: mix($color-black, $color-primary, $button-active-shade-percent);
+    border-color: mix(
+      $color-black,
+      $color-primary,
+      $button-active-shade-percent
+    );
     outline: none;
   }
 
@@ -53,35 +62,31 @@
     }
   }
 
-  /* type */
-  @include m(primary) {
-    @include button-variant($button-primary-font-color, $button-primary-background-color, $button-primary-border-color);
+  /* round */
+  @include when(round) {
+    border-radius: $button-border-radius-round;
   }
-  @include m(success) {
-    @include button-variant($button-success-font-color, $button-success-background-color, $button-success-border-color);
+
+  /* circle */
+  @include when(circle) {
+    padding: $button-padding-vertical;
+    border-radius: $button-border-radius-circle;
   }
-  @include m(info) {
-    @include button-variant($button-info-font-color, $button-info-background-color, $button-info-border-color);
-  }
-  @include m(danger) {
-    @include button-variant($button-danger-font-color, $button-danger-background-color, $button-danger-border-color);
-  }
-  @include m(warning) {
-    @include button-variant($button-warning-font-color, $button-warning-background-color, $button-warning-border-color);
+
+  /* disabled */
+  @include when(disabled) {
+    &,
+    &:hover,
+    &:focus {
+      color: $button-disabled-font-color;
+      cursor: not-allowed;
+      background-image: none;
+      border-color: $button-disabled-border-color;
+      background-color: $button-disabled-background-color;
+    }
   }
 
   /* size */
-  @include m(mini) {
-    @include button-size(
-      $button-mini-padding-vertical,
-      $button-mini-padding-horizontal,
-      $button-mini-font-size,
-      $button-mini-border-radius
-    );
-    @include when(circle) {
-      padding: $button-mini-padding-vertical;
-    }
-  }
   @include m(small) {
     @include button-size(
       $button-small-padding-vertical,
@@ -103,5 +108,42 @@
     @include when(circle) {
       padding: $button-large-padding-vertical;
     }
+  }
+
+  /* type */
+  @include m(primary) {
+    @include button-variant(
+      $button-primary-font-color,
+      $button-primary-background-color,
+      $button-primary-border-color
+    );
+  }
+  @include m(success) {
+    @include button-variant(
+      $button-success-font-color,
+      $button-success-background-color,
+      $button-success-border-color
+    );
+  }
+  @include m(info) {
+    @include button-variant(
+      $button-info-font-color,
+      $button-info-background-color,
+      $button-info-border-color
+    );
+  }
+  @include m(danger) {
+    @include button-variant(
+      $button-danger-font-color,
+      $button-danger-background-color,
+      $button-danger-border-color
+    );
+  }
+  @include m(warning) {
+    @include button-variant(
+      $button-warning-font-color,
+      $button-warning-background-color,
+      $button-warning-border-color
+    );
   }
 }
