@@ -12,7 +12,7 @@ export default { name: "k-button" };
     :size="size"
     @click="handlerClick"
   >
-    <i v-if="props.loading" class="tas-icon-loading"></i>
+    <i v-if="props.loading" class="k-icon-loading"></i>
     <i v-if="props.icon && !props.loading" :class="props.icon"></i>
     <slot />
   </button>

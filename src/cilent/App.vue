@@ -1,5 +1,5 @@
 <template>
-  <KButton></KButton>
+  <k-button></k-button>
 </template>
 
 <script lang="ts" setup>
