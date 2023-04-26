@@ -7,8 +7,8 @@ export default { name: "k-button" };
     class="k-button"
     :class="classList"
     :type="nativeType"
-    :autofocus="autoFocus"
-    :disabled="disabled || loading"
+    :disabled="disabled"
+    :loading="loading"
     :size="size"
     @click="handlerClick"
   >
@@ -25,7 +25,7 @@ import { Props, Emits } from "./button";
 const props = defineProps(Props);
 const emits = defineEmits(Emits);
 const classList = computed(() => {
-  const { type, size, round, plain, circle, disabled, loading } = props;
+  const { type, size, round, plain, circle, disabled, loading, link } = props;
   return [
     {
       [`k-button--${type}`]: type,
@@ -35,13 +35,13 @@ const classList = computed(() => {
       ["is-round"]: round,
       ["is-plain"]: plain,
       ["is-circle"]: circle,
+      ["is-link"]: link,
     },
   ];
 });
 function handlerClick(evt: MouseEvent): void {
   emits("click", evt);
 }
-console.log(classList);
 </script>
 
 <style scoped></style>

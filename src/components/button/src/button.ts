@@ -37,13 +37,13 @@ export const Props = {
     type: Boolean,
     default: (): Boolean => false,
   },
+  link: {
+    type: Boolean,
+    default: (): Boolean => false,
+  },
   icon: {
     type: String,
     default: (): String => "",
-  },
-  autoFocus: {
-    type: Boolean,
-    default: (): Boolean => false,
   },
   nativeType: {
     type: String as PropType<ButtonNativeType>,

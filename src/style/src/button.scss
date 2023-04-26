@@ -73,6 +73,52 @@
     border-radius: $button-border-radius-circle;
   }
 
+  /* loading */
+  @include when(loading) {
+    position: relative;
+    pointer-events: none;
+
+    &::before {
+      z-index: 1;
+      pointer-events: none;
+      content: "";
+      position: absolute;
+      left: -1px;
+      top: -1px;
+      right: -1px;
+      bottom: -1px;
+      border-radius: inherit;
+      background-color: $color-loading-background-color;
+    }
+  }
+
+  /* link */
+  @include when(link) {
+    background: transparent;
+    padding: 2px;
+    height: auto;
+    border-color: transparent;
+
+    &:hover,
+    &:focus {
+      color: mix($color-black, $color-white, $button-hover-tint-percent);
+      background-color: transparent;
+      border-color: transparent;
+    }
+
+    &:active {
+      color: mix($color-black, $color-white, $button-active-shade-percent);
+      background-color: transparent;
+      border-color: transparent;
+    }
+
+    &.is-disabled,
+    &.is-disabled:hover,
+    &.is-disabled:focus {
+      border-color: transparent;
+    }
+  }
+
   /* disabled */
   @include when(disabled) {
     &,
@@ -117,6 +163,16 @@
       $button-primary-background-color,
       $button-primary-border-color
     );
+    @include when(link) {
+      color: $button-primary-border-color;
+      &:hover,
+      &:focus {
+        color: mix($color-primary, $color-white, $button-hover-tint-percent);
+      }
+      &:active {
+        color: mix($color-primary, $color-white, $button-active-shade-percent);
+      }
+    }
   }
   @include m(success) {
     @include button-variant(
@@ -124,6 +180,16 @@
       $button-success-background-color,
       $button-success-border-color
     );
+    @include when(link) {
+      color: $button-success-border-color;
+      &:hover,
+      &:focus {
+        color: mix($color-success, $color-white, $button-hover-tint-percent);
+      }
+      &:active {
+        color: mix($color-success, $color-white, $button-active-shade-percent);
+      }
+    }
   }
   @include m(info) {
     @include button-variant(
@@ -131,6 +197,16 @@
       $button-info-background-color,
       $button-info-border-color
     );
+    @include when(link) {
+      color: $button-info-border-color;
+      &:hover,
+      &:focus {
+        color: mix($color-info, $color-white, $button-hover-tint-percent);
+      }
+      &:active {
+        color: mix($color-info, $color-white, $button-active-shade-percent);
+      }
+    }
   }
   @include m(danger) {
     @include button-variant(
@@ -138,6 +214,16 @@
       $button-danger-background-color,
       $button-danger-border-color
     );
+    @include when(link) {
+      color: $button-danger-border-color;
+      &:hover,
+      &:focus {
+        color: mix($color-danger, $color-white, $button-hover-tint-percent);
+      }
+      &:active {
+        color: mix($color-danger, $color-white, $button-active-shade-percent);
+      }
+    }
   }
   @include m(warning) {
     @include button-variant(
@@ -145,5 +231,15 @@
       $button-warning-background-color,
       $button-warning-border-color
     );
+    @include when(link) {
+      color: $button-warning-border-color;
+      &:hover,
+      &:focus {
+        color: mix($color-warning, $color-white, $button-hover-tint-percent);
+      }
+      &:active {
+        color: mix($color-warning, $color-white, $button-active-shade-percent);
+      }
+    }
   }
 }
