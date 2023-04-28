@@ -126,13 +126,17 @@
 
     &:hover,
     &:focus {
-      color: mix($color-black, $color-white, $button-hover-tint-percent);
+      color: mix($color-black, $button-color-link, $button-hover-tint-percent);
       background-color: transparent;
       border-color: transparent;
     }
 
     &:active {
-      color: mix($color-black, $color-white, $button-active-shade-percent);
+      color: mix(
+        $color-black,
+        $button-color-link,
+        $button-active-shade-percent
+      );
       background-color: transparent;
       border-color: transparent;
     }
@@ -198,10 +202,18 @@
       color: $button-primary-border-color;
       &:hover,
       &:focus {
-        color: mix($color-primary, $color-white, $button-hover-tint-percent);
+        color: mix(
+          $color-primary,
+          $button-color-link,
+          $button-hover-tint-percent
+        );
       }
       &:active {
-        color: mix($color-primary, $color-white, $button-active-shade-percent);
+        color: mix(
+          $color-primary,
+          $button-color-link,
+          $button-active-shade-percent
+        );
       }
     }
   }
@@ -215,10 +227,18 @@
       color: $button-success-border-color;
       &:hover,
       &:focus {
-        color: mix($color-success, $color-white, $button-hover-tint-percent);
+        color: mix(
+          $color-success,
+          $button-color-link,
+          $button-hover-tint-percent
+        );
       }
       &:active {
-        color: mix($color-success, $color-white, $button-active-shade-percent);
+        color: mix(
+          $color-success,
+          $button-color-link,
+          $button-active-shade-percent
+        );
       }
     }
   }
@@ -232,10 +252,14 @@
       color: $button-info-border-color;
       &:hover,
       &:focus {
-        color: mix($color-info, $color-white, $button-hover-tint-percent);
+        color: mix($color-info, $button-color-link, $button-hover-tint-percent);
       }
       &:active {
-        color: mix($color-info, $color-white, $button-active-shade-percent);
+        color: mix(
+          $color-info,
+          $button-color-link,
+          $button-active-shade-percent
+        );
       }
     }
   }
@@ -249,10 +273,18 @@
       color: $button-danger-border-color;
       &:hover,
       &:focus {
-        color: mix($color-danger, $color-white, $button-hover-tint-percent);
+        color: mix(
+          $color-danger,
+          $button-color-link,
+          $button-hover-tint-percent
+        );
       }
       &:active {
-        color: mix($color-danger, $color-white, $button-active-shade-percent);
+        color: mix(
+          $color-danger,
+          $button-color-link,
+          $button-active-shade-percent
+        );
       }
     }
   }
@@ -266,10 +298,18 @@
       color: $button-warning-border-color;
       &:hover,
       &:focus {
-        color: mix($color-warning, $color-white, $button-hover-tint-percent);
+        color: mix(
+          $color-warning,
+          $button-color-link,
+          $button-hover-tint-percent
+        );
       }
       &:active {
-        color: mix($color-warning, $color-white, $button-active-shade-percent);
+        color: mix(
+          $color-warning,
+          $button-color-link,
+          $button-active-shade-percent
+        );
       }
     }
   }
