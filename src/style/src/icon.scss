@@ -1,0 +1,62 @@
+@use "mixins/mixins" as *;
+@use "common/var" as *;
+
+/* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+  font-family: "doublek-ui-icons"; /* Project id 4044729 */
+  src: url("./fonts/iconfont.woff2") format("woff2"),
+    url("./fonts/iconfont.woff") format("woff"),
+    url("./fonts/iconfont.ttf") format("truetype");
+}
+
+[class^="#{$namespace}-icon-"] {
+  font-family: "doublek-ui-icons" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.k-icon-loading:before {
+  content: "\e921";
+}
+
+.k-icon-cart-add-fill:before {
+  content: "\e83c";
+}
+
+.k-icon-money-bank-fill:before {
+  content: "\e8a4";
+}
+
+.k-icon-global:before {
+  content: "\e9a4";
+}
+
+.k-icon-message-send-inquiry-fill:before {
+  content: "\e8a5";
+}
+
+.k-icon-honor:before {
+  content: "\e9a5";
+}
+
+.k-icon-money-dollar-symbol:before {
+  content: "\e8a6";
+}
+
+.k-icon-image-text-fill:before {
+  content: "\e9a6";
+}
+
+.k-icon-money-asp:before {
+  content: "\e8a7";
+}
+
+.k-icon-invoice:before {
+  content: "\e9a7";
+}
+
+.k-icon-money-dollar:before {
+  content: "\e8a8";
+}

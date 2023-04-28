@@ -13,7 +13,7 @@ export default { name: "k-button" };
     @click="handlerClick"
   >
     <i v-if="props.loading" class="k-icon-loading"></i>
-    <i v-if="props.icon && !props.loading" :class="props.icon"></i>
+    <i v-if="props.icon && !props.loading" :class="`k-icon-${props.icon}`"></i>
     <slot />
   </button>
 </template>
