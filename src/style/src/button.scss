@@ -168,6 +168,9 @@
     @include when(circle) {
       padding: $button-small-padding-vertical;
     }
+    & [class*="k-icon-"] {
+      font-size: 12px;
+    }
   }
   @include m(large) {
     @include button-size(
@@ -178,6 +181,9 @@
     );
     @include when(circle) {
       padding: $button-large-padding-vertical;
+    }
+    & [class*="k-icon-"] {
+      font-size: 16px;
     }
   }
 

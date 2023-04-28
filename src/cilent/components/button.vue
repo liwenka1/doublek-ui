@@ -6,13 +6,6 @@
   <k-button type="danger">danger </k-button>
   <k-button type="warning">warning</k-button>
   <br />
-  <k-button loading>default</k-button>
-  <k-button loading type="primary">primary </k-button>
-  <k-button loading type="success">success</k-button>
-  <k-button loading type="info">info</k-button>
-  <k-button loading type="danger">danger </k-button>
-  <k-button loading type="warning">warning</k-button>
-  <br />
   <k-button plain>default</k-button>
   <k-button plain type="primary">primary </k-button>
   <k-button plain type="success">success</k-button>
@@ -58,6 +51,9 @@
   <k-button size="large">large </k-button>
   <k-button>default </k-button>
   <k-button size="small">small </k-button>
+  <k-button size="large" loading>large </k-button>
+  <k-button loading>default </k-button>
+  <k-button size="small" loading>small </k-button>
   <br />
   <k-button circle size="large" icon="cart-add-fill"> </k-button>
   <k-button circle icon="cart-add-fill"> </k-button>
