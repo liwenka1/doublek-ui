@@ -11,8 +11,6 @@
   <k-icon name="money-dollar"></k-icon>
 </template>
 
-<script lang="ts" setup>
-import { KIcon } from '@/index'
-</script>
+<script lang="ts" setup></script>
 
 <style scoped></style>

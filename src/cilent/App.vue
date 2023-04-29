@@ -3,13 +3,13 @@
   <br />
   <k-icon></k-icon>
   <br />
-  <k-grid></k-grid>
+  <k-layout></k-layout>
 </template>
 
 <script lang="ts" setup>
 import KButton from './components/button.vue'
 import KIcon from './components/icon.vue'
-import KGrid from './components/grid.vue'
+import KLayout from './components/layout.vue'
 </script>
 
 <style scoped></style>

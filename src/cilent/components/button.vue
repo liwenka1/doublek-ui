@@ -60,8 +60,6 @@
   <k-button circle size="small" icon="cart-add-fill"> </k-button>
 </template>
 
-<script lang="ts" setup>
-import { KButton } from '@/index'
-</script>
+<script lang="ts" setup></script>
 
 <style scoped></style>
