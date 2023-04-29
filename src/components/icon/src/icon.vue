@@ -1,5 +1,5 @@
 <script lang="ts">
-export default { name: "k-icon" };
+export default { name: 'KIcon' }
 </script>
 
 <template>
@@ -7,9 +7,9 @@ export default { name: "k-icon" };
 </template>
 
 <script setup lang="ts">
-import "../styles/index";
-import { Props } from "./icon";
-const props = defineProps(Props);
+import '../styles/index'
+import { Props } from './icon'
+const props = defineProps(Props)
 </script>
 
 <style scoped></style>

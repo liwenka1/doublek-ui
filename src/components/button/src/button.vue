@@ -1,5 +1,5 @@
 <script lang="ts">
-export default { name: "k-button" };
+export default { name: 'KButton' }
 </script>
 
 <template>
@@ -19,28 +19,28 @@ export default { name: "k-button" };
 </template>
 
 <script setup lang="ts">
-import "../styles/index";
-import { computed } from "vue";
-import { Props, Emits } from "./button";
-const props = defineProps(Props);
-const emits = defineEmits(Emits);
+import '../styles/index'
+import { computed } from 'vue'
+import { Props, Emits } from './button'
+const props = defineProps(Props)
+const emits = defineEmits(Emits)
 const classList = computed(() => {
-  const { type, size, round, plain, circle, disabled, loading, link } = props;
+  const { type, size, round, plain, circle, disabled, loading, link } = props
   return [
     {
       [`k-button--${type}`]: type,
       [`k-button--${size}`]: size,
-      ["is-disabled"]: disabled,
-      ["is-loading"]: loading,
-      ["is-round"]: round,
-      ["is-plain"]: plain,
-      ["is-circle"]: circle,
-      ["is-link"]: link,
-    },
-  ];
-});
+      ['is-disabled']: disabled,
+      ['is-loading']: loading,
+      ['is-round']: round,
+      ['is-plain']: plain,
+      ['is-circle']: circle,
+      ['is-link']: link
+    }
+  ]
+})
 function handlerClick(evt: MouseEvent): void {
-  emits("click", evt);
+  emits('click', evt)
 }
 </script>
 

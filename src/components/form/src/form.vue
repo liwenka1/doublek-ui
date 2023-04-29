@@ -1,5 +1,5 @@
 <script lang="ts">
-export default { name: "k-form" };
+export default { name: 'KForm' }
 </script>
 
 <template>
@@ -12,7 +12,7 @@ export default { name: "k-form" };
 </template>
 
 <script setup lang="ts">
-import "../styles/form.css";
+import '../styles/form.css'
 </script>
 
 <style scoped></style>

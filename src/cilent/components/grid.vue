@@ -4,7 +4,7 @@
 </template>
 
 <script lang="ts" setup>
-import { KCol, KRow } from "@/index";
+import { KCol, KRow } from '@/index'
 </script>
 
 <style scoped></style>

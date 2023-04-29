@@ -1,13 +1,13 @@
-import type { ButtonHTMLAttributes } from "vue";
+import type { ButtonHTMLAttributes } from 'vue'
 
-export type ButtonSizeType = "large" | "default" | "small" | "mini";
+export type ButtonSizeType = 'large' | 'default' | 'small' | 'mini'
 
 export type ButtonType =
-  | "default"
-  | "primary"
-  | "success"
-  | "info"
-  | "danger"
-  | "warning";
+  | 'default'
+  | 'primary'
+  | 'success'
+  | 'info'
+  | 'danger'
+  | 'warning'
 
-export type ButtonNativeType = NonNullable<ButtonHTMLAttributes["type"]>;
+export type ButtonNativeType = NonNullable<ButtonHTMLAttributes['type']>

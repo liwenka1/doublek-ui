@@ -61,7 +61,7 @@
 </template>
 
 <script lang="ts" setup>
-import { KButton } from "@/index";
+import { KButton } from '@/index'
 </script>
 
 <style scoped></style>

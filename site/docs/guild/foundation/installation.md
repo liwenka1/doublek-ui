@@ -5,6 +5,7 @@
 ## npm
 
 使用 npm 安装。
+
 ```
 npm install -D doubulk-ui
 ```
@@ -12,6 +13,7 @@ npm install -D doubulk-ui
 ## npm
 
 使用 yarn 安装。
+
 ```
 yarn add doublek-ui -D
 ```
@@ -19,8 +21,9 @@ yarn add doublek-ui -D
 ## pnpm
 
 使用 npm 安装。
+
 ```
-npm install doubulk-ui -D 
+npm install doubulk-ui -D
 ```
 
 请阅读下一节：<a href='/guild/foundation/installation'>快速开始</a>

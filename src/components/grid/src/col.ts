@@ -1,5 +1,5 @@
-import { computed, defineComponent, h, inject } from "vue";
+import { computed, defineComponent, h, inject } from 'vue'
 
 export default defineComponent({
-  name: "k-col",
-});
+  name: 'k-col'
+})
