@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "pnpm clean && vue-tsc && vite build && pnpm type",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
+    "lint": "eslint --ext .vue,.js,.ts,.jsx,.tsx --ignore-path .gitignore --fix",
     "prettier": "prettier --write \"./**/*.{html,vue,ts,js,json,md}\"",
     "preview": "vite preview",
     "type": "node ./src/scripts/buildType.cjs",
