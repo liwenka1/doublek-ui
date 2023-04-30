@@ -19,9 +19,7 @@
   @include when(justify-space-around) {
     justify-content: space-around;
   }
-  @include when(justify-space-evenly) {
-    justify-content: space-evenly;
-  }
+
   @include when(align-middle) {
     align-items: center;
   }

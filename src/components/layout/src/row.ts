@@ -1,8 +1,8 @@
 import '../styles/index'
 import { computed, defineComponent, h, provide } from 'vue'
 
-const KRow = defineComponent({
-  name: 'k-row',
+export default defineComponent({
+  name: 'KRow',
   props: {
     tag: {
       type: String,
@@ -15,40 +15,32 @@ const KRow = defineComponent({
     justify: {
       type: String,
       default: 'start'
-    },
-    align: { type: String, default: 'top' }
+    }
   },
   setup(props, { slots }) {
-    const gutter = computed(() => props.gutter)
-    provide('k-row', gutter)
-
-    const style = computed(() => {
-      const ret = {
+    provide('KRow', props.gutter)
+    const classList = computed(() => [
+      'k-row',
+      props.justify !== 'start' ? `is-justify-${props.justify}` : ''
+    ])
+    const styles = computed(() => {
+      const res = {
         marginLeft: '',
         marginRight: ''
       }
       if (props.gutter) {
-        ret.marginLeft = `-${props.gutter / 2}px`
-        ret.marginRight = ret.marginLeft
+        res.marginLeft = res.marginRight = `-${props.gutter / 2}px`
       }
-      return ret
+      return res
     })
-
-    return () => {
+    return () =>
       h(
         props.tag,
         {
-          class: [
-            'k-row',
-            props.justify !== 'start' ? `is-justify-${props.justify}` : '',
-            props.align !== 'top' ? `is-align-${props.align}` : ''
-          ],
-          style: style.value
+          class: classList.value,
+          style: styles.value
         },
         slots.default?.()
       )
-    }
   }
 })
-
-export default KRow

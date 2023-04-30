@@ -5,8 +5,8 @@ dependencies:
     specifier: ^4.9.1
     version: registry.npmmirror.com/@algolia/client-search@4.9.1
   doublek-ui:
-    specifier: ^0.0.15
-    version: 0.0.15
+    specifier: ^0.0.16
+    version: 0.0.16
 
 devDependencies:
   sass:
@@ -368,8 +368,8 @@ packages:
     resolution: {integrity: sha512-Z1PhmomIfypOpoMjRQB70jfvy/wxT50qW08YXO5lMIJkrdq4yOTR+AW7FqutScmB9NkLwxo+jU+kZLbofZZq/w==}
     dev: false
 
-  /doublek-ui@0.0.15:
-    resolution: {integrity: sha512-fBwtH6bwwp78bVJxA9PqWnGOpjCaZ/os5tzsQtQuGSv0U3XnHfBRvaw3WhVYP0pmM6vAuV9efRFN2Gm5SrMLUw==}
+  /doublek-ui@0.0.16:
+    resolution: {integrity: sha512-oXdBocpD85fPCqV5+YXGHvhOfQYQWhaCIgvmJ8rtcnEW0rZiJc+MtRXri/OXzlVJgl1sb11BKm1osfz91P5JYQ==}
     dependencies:
       vue: 3.2.47
     dev: false
