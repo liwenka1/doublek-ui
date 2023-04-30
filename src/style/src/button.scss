@@ -1,7 +1,7 @@
-@use "./mixins/mixins.scss" as *;
-@use "./mixins/utils.scss" as *;
-@use "./common/var.scss" as *;
-@use "./mixins/button" as *;
+@use './mixins/mixins.scss' as *;
+@use './mixins/utils.scss' as *;
+@use './common/var.scss' as *;
+@use './mixins/button' as *;
 
 @include b(button) {
   display: inline-flex;
@@ -56,7 +56,7 @@
     border: 0;
   }
 
-  & [class*="k-icon-"] {
+  & [class*='k-icon-'] {
     & + span {
       margin-left: 5px;
     }
@@ -81,7 +81,7 @@
     &::before {
       z-index: 1;
       pointer-events: none;
-      content: "";
+      content: '';
       position: absolute;
       left: -1px;
       top: -1px;
@@ -90,7 +90,7 @@
       border-radius: inherit;
       background-color: $color-loading-background-color;
     }
-    & [class*="k-icon-"] {
+    & [class*='k-icon-'] {
       animation: rotation 2s linear infinite;
     }
   }
@@ -172,7 +172,7 @@
     @include when(circle) {
       padding: $button-small-padding-vertical;
     }
-    & [class*="k-icon-"] {
+    & [class*='k-icon-'] {
       font-size: 12px;
     }
   }
@@ -186,7 +186,7 @@
     @include when(circle) {
       padding: $button-large-padding-vertical;
     }
-    & [class*="k-icon-"] {
+    & [class*='k-icon-'] {
       font-size: 16px;
     }
   }
@@ -215,6 +215,20 @@
           $button-active-shade-percent
         );
       }
+      @include when(disabled) {
+        &,
+        &:hover,
+        &:focus {
+          color: mix(
+            $color-primary,
+            $button-color-link,
+            $button-hover-tint-percent
+          );
+          cursor: not-allowed;
+          background-image: none;
+          background-color: $button-disabled-background-color;
+        }
+      }
     }
   }
   @include m(success) {
@@ -240,6 +254,20 @@
           $button-active-shade-percent
         );
       }
+      @include when(disabled) {
+        &,
+        &:hover,
+        &:focus {
+          color: mix(
+            $color-success,
+            $button-color-link,
+            $button-active-shade-percent
+          );
+          cursor: not-allowed;
+          background-image: none;
+          background-color: $button-disabled-background-color;
+        }
+      }
     }
   }
   @include m(info) {
@@ -260,6 +288,20 @@
           $button-color-link,
           $button-active-shade-percent
         );
+      }
+      @include when(disabled) {
+        &,
+        &:hover,
+        &:focus {
+          color: mix(
+            $color-info,
+            $button-color-link,
+            $button-active-shade-percent
+          );
+          cursor: not-allowed;
+          background-image: none;
+          background-color: $button-disabled-background-color;
+        }
       }
     }
   }
@@ -286,6 +328,20 @@
           $button-active-shade-percent
         );
       }
+      @include when(disabled) {
+        &,
+        &:hover,
+        &:focus {
+          color: mix(
+            $color-danger,
+            $button-color-link,
+            $button-active-shade-percent
+          );
+          cursor: not-allowed;
+          background-image: none;
+          background-color: $button-disabled-background-color;
+        }
+      }
     }
   }
   @include m(warning) {
@@ -310,6 +366,20 @@
           $button-color-link,
           $button-active-shade-percent
         );
+      }
+      @include when(disabled) {
+        &,
+        &:hover,
+        &:focus {
+          color: mix(
+            $color-warning,
+            $button-color-link,
+            $button-active-shade-percent
+          );
+          cursor: not-allowed;
+          background-image: none;
+          background-color: $button-disabled-background-color;
+        }
       }
     }
   }

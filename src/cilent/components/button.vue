@@ -27,6 +27,13 @@
   <k-button disabled plain type="danger">danger </k-button>
   <k-button disabled plain type="warning">warning</k-button>
   <br />
+  <k-button link disabled>default</k-button>
+  <k-button link disabled type="primary">primary </k-button>
+  <k-button link disabled type="success">success</k-button>
+  <k-button link disabled type="info">info</k-button>
+  <k-button link disabled type="danger">danger </k-button>
+  <k-button link disabled type="warning">warning</k-button>
+  <br />
   <k-button round>default</k-button>
   <k-button round type="primary">primary </k-button>
   <k-button round type="success">success</k-button>
