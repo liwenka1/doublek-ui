@@ -32,6 +32,14 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         {
           text: 'Button 按钮',
           link: '/components/basic/button'
+        },
+        {
+          text: 'Icon 图标',
+          link: '/components/basic/icon'
+        },
+        {
+          text: 'Layout 布局',
+          link: '/components/basic/layout'
         }
       ]
     }
