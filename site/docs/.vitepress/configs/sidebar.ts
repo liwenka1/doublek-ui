@@ -27,7 +27,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
   ],
   '/components/': [
     {
-      text: '基础组件',
+      text: 'Basic 基础组件',
       items: [
         {
           text: 'Button 按钮',
@@ -40,6 +40,15 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         {
           text: 'Layout 布局',
           link: '/components/basic/layout'
+        }
+      ]
+    },
+    {
+      text: 'Navigation 导航',
+      items: [
+        {
+          text: 'Breadcrumb 面包屑',
+          link: '/components/navigation/breadcrumb'
         }
       ]
     }
