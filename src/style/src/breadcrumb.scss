@@ -1,0 +1,23 @@
+@use 'mixins/mixins' as *;
+@use 'common/var' as *;
+
+@include b(breadcrumb) {
+  display: flex;
+  padding: 25px 10px;
+  &-item {
+    a {
+      color: #666;
+      transition: all 0.5s;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+  i {
+    color: #a8abb2;
+    font-size: 14px;
+    margin: 0 9px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+}

@@ -1,1 +1,1 @@
-import '@/style/src/breadcrumb.scss'
+import '@/style/src/breadcrumb-item.scss'

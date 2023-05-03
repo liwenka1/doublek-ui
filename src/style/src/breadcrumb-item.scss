@@ -1,5 +1,5 @@
 @use 'mixins/mixins' as *;
-@use 'common/color' as *;
+@use 'common/var' as *;
 
 @include b(breadcrumb-item) {
   a {
