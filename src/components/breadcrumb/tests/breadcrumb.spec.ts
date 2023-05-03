@@ -12,8 +12,12 @@ describe('Breadcrumb:Test', () => {
     expect(wrapper.text()).toContain('Hello World')
   })
 
-//   it('should have class', () => {
-//     const wrapper = mount(breadcrumb)
-//     expect(wrapper.classes()).toContain('k-breadcrumb')
-//   })
+  it('should have class', () => {
+    const wrapper = mount(breadcrumb, {
+      slots: {
+        default: 'Hello World'
+      }
+    })
+    expect(wrapper.classes()).toContain('k-breadcrumb')
+  })
 })
