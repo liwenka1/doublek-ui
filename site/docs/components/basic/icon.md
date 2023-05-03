@@ -1,14 +1,15 @@
-<style>
-  .example{
-      display:flex;
-      border: 1px solid #f5f5f5;
-      border-radius: 5px;
-      padding:20px
-  }
-  i {
-    font-size:30px !important
-  }
+<style scoped>
+.example {
+  display: flex;
+  border: 1px solid #f5f5f5;
+  border-radius: 5px;
+  padding: 20px;
+}
+i {
+  font-size: 30px !important;
+}
 </style>
+
 # Icon 图标
 
 Doublek UI 提供了一套常用的图标集合。
