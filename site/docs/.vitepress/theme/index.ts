@@ -1,8 +1,8 @@
 import { h } from 'vue'
 import { useData } from 'vitepress'
 import Theme from 'vitepress/theme'
-import Title from './components/Title.vue'
-import './styles/index.scss'
+import './styles/style.css'
+import './styles/var.css'
 import 'doublek-ui/dist/style.css'
 import { creatUI } from 'doublek-ui'
 
@@ -23,7 +23,6 @@ export default Object.assign({}, Theme, {
     Theme.enhanceApp(ctx)
     const { app } = ctx
     // register global components
-    app.component('Title', Title)
     app.use(creatUI())
   }
 })
