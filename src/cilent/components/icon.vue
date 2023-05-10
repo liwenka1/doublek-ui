@@ -9,6 +9,12 @@
   <k-icon name="money-asp"></k-icon>
   <k-icon name="invoice"></k-icon>
   <k-icon name="money-dollar"></k-icon>
+  <br />
+  <k-icon name="info"></k-icon>
+  <k-icon name="success"></k-icon>
+  <k-icon name="error"></k-icon>
+  <k-icon name="warning"></k-icon>
+  <k-icon name="close"></k-icon>
 </template>
 
 <script lang="ts" setup></script>

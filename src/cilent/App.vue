@@ -6,6 +6,8 @@
   <k-layout></k-layout>
   <br />
   <k-breadcrumb></k-breadcrumb>
+  <br />
+  <k-alert></k-alert>
 </template>
 
 <script lang="ts" setup>
@@ -13,6 +15,7 @@ import KButton from './components/button.vue'
 import KIcon from './components/icon.vue'
 import KLayout from './components/layout.vue'
 import KBreadcrumb from './components/breadcrumb.vue'
+import KAlert from './components/alert.vue'
 </script>
 
 <style scoped></style>

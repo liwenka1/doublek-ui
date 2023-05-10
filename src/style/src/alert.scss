@@ -1,0 +1,68 @@
+@use 'mixins/mixins' as *;
+@use 'common/var' as *;
+
+@include b(alert) {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 15px 15px;
+  margin-bottom: 5px;
+  border-radius: $alert-border-radius;
+  @include b(alert_content) {
+    overflow: auto;
+    padding-left: 15px;
+    h3 {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      margin: 0;
+      font-size: $alert-title-font-size;
+    }
+    p {
+      margin: 0px;
+      font-size: $alert-description-font-size;
+    }
+  }
+  @include b(alert_close-btn) {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    font-size: $alert-description-font-size;
+  }
+  @include m(warning) {
+    background-color: $alert-warning-color;
+    color: mix($color-white, $color-warning, 10%);
+  }
+  @include m(success) {
+    background-color: $alert-success-color;
+    color: mix($color-white, $color-success, 10%);
+  }
+  @include m(info) {
+    background-color: $alert-info-color;
+    color: mix($color-white, $color-info, 10%);
+  }
+  @include m(error) {
+    background-color: $alert-danger-color;
+    color: mix($color-white, $color-danger, 10%);
+  }
+
+  @include when(center) {
+    justify-content: center;
+  }
+}
+
+.tas-alert-fade-enter-from,
+.tas-alert-fade-leave-to {
+  transform: translateX(100px);
+  opacity: 0;
+}
+.tas-alert-fade-enter-to,
+.tas-alert-fade-leave-from {
+  opacity: 1;
+}
+.tas-alert-fade-enter-active,
+.tas-alert-fade-leave-active {
+  transition: all 0.5s;
+}

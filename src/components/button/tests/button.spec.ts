@@ -22,7 +22,7 @@ describe('Button:Test', () => {
   it('should have size', () => {
     const wrapper = mount(Button, {
       props: {
-        type: 'large'
+        size: 'large'
       }
     })
     expect(wrapper.classes()).toContain('k-button--large')
