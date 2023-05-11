@@ -1,10 +1,11 @@
 <template>
   <k-button ref="button" class="button">click me! </k-button>
+  <k-alert title="123" type="success"></k-alert>
 </template>
 
 <script lang="ts" setup>
 import { onMounted, ref } from 'vue'
-import { KButton } from 'doublek-ui'
+import { KButton, KAlert } from 'doublek-ui'
 
 const button = ref()
 onMounted(() => {
