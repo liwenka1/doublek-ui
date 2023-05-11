@@ -12,7 +12,7 @@ export default { name: 'KAlert' }
         <k-icon
           name="close"
           class="k-alert_close-btn"
-          v-if="closeable"
+          v-if="closable"
           @click="handlerClose"
         ></k-icon>
       </div>
@@ -41,7 +41,7 @@ const props = defineProps({
     type: Boolean,
     default: false
   },
-  closeable: {
+  closable: {
     type: Boolean,
     default: false
   },
@@ -66,7 +66,7 @@ interface IconMaps {
 const iconMaps: IconMaps = {
   info: 'info',
   success: 'success',
-  error: 'danger',
+  error: 'error',
   warning: 'warning'
 }
 const iconName = computed(() => {
