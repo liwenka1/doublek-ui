@@ -27,6 +27,11 @@ Doublek UI 提供了一套常用的图标集合。
   <k-icon name="money-asp"></k-icon>
   <k-icon name="invoice"></k-icon>
   <k-icon name="money-dollar"></k-icon>
+  <k-icon name="info"></k-icon>
+  <k-icon name="success"></k-icon>
+  <k-icon name="error"></k-icon>
+  <k-icon name="warning"></k-icon>
+  <k-icon name="close"></k-icon>
   </div>
   <details>
   <summary>展开查看</summary>
@@ -42,6 +47,11 @@ Doublek UI 提供了一套常用的图标集合。
   <k-icon name="money-asp"></k-icon>
   <k-icon name="invoice"></k-icon>
   <k-icon name="money-dollar"></k-icon>
+  <k-icon name="info"></k-icon>
+  <k-icon name="success"></k-icon>
+  <k-icon name="error"></k-icon>
+  <k-icon name="warning"></k-icon>
+  <k-icon name="close"></k-icon>
   ```
   </details>
   
