@@ -32,6 +32,7 @@ Doublek UI 提供了一套常用的图标集合。
   <k-icon name="error"></k-icon>
   <k-icon name="warning"></k-icon>
   <k-icon name="close"></k-icon>
+  <k-icon name="up"></k-icon>
   </div>
   <details>
   <summary>展开查看</summary>
@@ -52,6 +53,7 @@ Doublek UI 提供了一套常用的图标集合。
   <k-icon name="error"></k-icon>
   <k-icon name="warning"></k-icon>
   <k-icon name="close"></k-icon>
+  <k-icon name="up"></k-icon>
   ```
   </details>
   

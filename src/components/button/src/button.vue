@@ -10,7 +10,7 @@ export default { name: 'KButton' }
     :disabled="disabled"
     :loading="loading"
     :size="size"
-    @click="handlerClick"
+    @click="handleClick"
   >
     <i v-if="props.loading" class="k-icon-loading"></i>
     <i v-if="props.icon && !props.loading" :class="`k-icon-${props.icon}`"></i>
@@ -39,7 +39,7 @@ const classList = computed(() => {
     }
   ]
 })
-function handlerClick(evt: MouseEvent): void {
+const handleClick = (evt: MouseEvent): void => {
   emits('click', evt)
 }
 </script>

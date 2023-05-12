@@ -1,1 +1,26 @@
+@use 'mixins/mixins' as *;
+@use 'common/var' as *;
 
+@include b(backtop) {
+  position: fixed;
+  z-index: 2;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 0.5s;
+  overflow: hidden;
+  background-color: $color-white;
+  box-shadow: $box-shadow-base;
+  &:hover {
+    color: $color-primary;
+    background-color: $color-primary-light-9;
+  }
+  @include b(backtop-icon) {
+    color: $color-primary;
+    font-size: 20px;
+  }
+}

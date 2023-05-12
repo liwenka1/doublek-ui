@@ -19,6 +19,6 @@
   },
   "dependencies": {
     "@algolia/client-search": "^4.9.1",
-    "doublek-ui": "^0.0.22"
+    "doublek-ui": "^0.0.23"
   }
 }

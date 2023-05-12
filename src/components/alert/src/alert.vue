@@ -13,7 +13,7 @@ export default { name: 'KAlert' }
           name="close"
           class="k-alert_close-btn"
           v-if="closable"
-          @click="handlerClose"
+          @click="handleClose"
         ></k-icon>
       </div>
     </div>
@@ -73,7 +73,7 @@ const iconName = computed(() => {
   const { type } = props
   return iconMaps[type]
 })
-const handlerClose = () => {
+const handleClose = () => {
   isShow.value = false
   emits('close')
 }

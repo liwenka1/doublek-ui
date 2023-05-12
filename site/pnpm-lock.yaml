@@ -5,8 +5,8 @@ dependencies:
     specifier: ^4.9.1
     version: registry.npmmirror.com/@algolia/client-search@4.9.1
   doublek-ui:
-    specifier: ^0.0.22
-    version: 0.0.22
+    specifier: ^0.0.23
+    version: 0.0.23
 
 devDependencies:
   sass:
@@ -254,8 +254,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /doublek-ui@0.0.22:
-    resolution: {integrity: sha512-S/c4julZfQ/0GRGuRJsFRqo+R37Unh8naXPOQQUg7fL5f051UYZplgl1sUfrVcJCD/e++diUJzitnn9l8Lh3nQ==}
+  /doublek-ui@0.0.23:
+    resolution: {integrity: sha512-h4uolKo4TRiOM5PSccL3t+f0nfWTBAL3/t/mC88zNY4ORWK4fEgbadY7O/Ql5jqatJKxAGMNjqnflRf6j1Bgmw==}
     dev: false
 
   /fill-range@7.0.1:
