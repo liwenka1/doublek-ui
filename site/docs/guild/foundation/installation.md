@@ -10,7 +10,7 @@
 npm install -D doubulk-ui
 ```
 
-## npm
+## yarn
 
 使用 yarn 安装。
 
