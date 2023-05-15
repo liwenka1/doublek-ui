@@ -1,0 +1,11 @@
+<script lang="ts">
+export default { name: 'KCarousel' }
+</script>
+
+<template></template>
+
+<script lang="ts" setup>
+import {} from 'vue'
+</script>
+
+<style lang="scss" scoped></style>

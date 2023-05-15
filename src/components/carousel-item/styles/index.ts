@@ -1,0 +1,1 @@
+import '@/style/src/carousel-item.scss'

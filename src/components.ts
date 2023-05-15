@@ -7,3 +7,5 @@ export { default as KBreadcrumb } from '@/components/breadcrumb/src/breadcrumb.v
 export { default as KBreadcrumbItem } from '@/components/breadcrumb-item/src/breadcrumb-item.vue'
 export { default as KAlert } from '@/components/alert/src/alert.vue'
 export { default as KBacktop } from '@/components/backtop/src/backtop.vue'
+export { default as KCarousel } from '@/components/carousel/src/carousel.vue'
+export { default as KCarouselItem } from '@/components/carousel-item/src/carousel-item.vue'
