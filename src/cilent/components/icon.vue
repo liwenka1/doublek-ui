@@ -15,6 +15,10 @@
   <k-icon name="error"></k-icon>
   <k-icon name="warning"></k-icon>
   <k-icon name="close"></k-icon>
+  <k-icon name="up"></k-icon>
+  <k-icon name="down"></k-icon>
+  <k-icon name="left"></k-icon>
+  <k-icon name="right"></k-icon>
 </template>
 
 <script lang="ts" setup></script>
